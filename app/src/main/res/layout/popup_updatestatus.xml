@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:layout_height="280dp"
+    android:padding="15dp"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+
+    <Button
+        android:id="@+id/updatestatusbtnadmin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rg"
+        android:background="@color/LightSeaGreen"
+        android:text="Update Status"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        tools:ignore="RtlCompat" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg">
+
+    <RadioButton
+        android:id="@+id/RB1recv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:text="Received" />
+
+    <RadioButton
+        android:id="@+id/RB2way"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/checkBox1prc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:text="On The Way" />
+
+    <RadioButton
+        android:id="@+id/RB3cld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/updatestatusbtnadmin"
+        android:layout_below="@+id/checkBox2way"
+        android:layout_marginBottom="2dp"
+        android:text="Collected"
+        tools:ignore="RtlCompat" />
+
+    <RadioButton
+        android:id="@+id/RB4cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/updatestatusbtnadmin"
+        android:layout_below="@+id/checkBox3cld"
+        android:text="Cancelled"
+        tools:ignore="RtlCompat" />
+    </RadioGroup>
+</RelativeLayout>

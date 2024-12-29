@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="15dp"
+    android:id="@+id/loginLayer"
+    android:orientation="vertical"
+    android:background="@color/lesswhite">
+
+
+    <RelativeLayout
+        android:id="@+id/layerR1"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/shape1"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:background="@color/lesswhite"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            tools:ignore="RtlCompat">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="5dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/un" />
+
+            <EditText
+                android:id="@+id/unloginET"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/remember"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:background="@color/lesswhite"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            tools:ignore="RtlCompat">
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="5dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/pass" />
+
+            <EditText
+                android:id="@+id/loginpassET"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="73dp"
+            android:text="Remember Me"
+            android:textSize="15sp"
+            tools:ignore="UnknownId" />
+
+        <Button
+            android:id="@+id/userloginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="12dp"
+            android:background="@color/LightSeaGreen"
+            android:text="Log in"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/regtxt"
+        android:layout_below="@+id/layerR1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/regtxtbtn"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Don't Have An Account Yet? Register Now."
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

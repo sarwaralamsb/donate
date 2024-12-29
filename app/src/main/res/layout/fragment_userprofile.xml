@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lesswhite">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/headerprofile"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:id="@+id/usericon"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="32sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/usericonbg"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/tvProfileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:background="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/liniar1"
+            android:layout_below="@id/headerprofile"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Email:"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="14dp"
+                android:textSize="16sp"
+                android:layout_marginEnd="5dp"
+                android:text=""
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/liniar2"
+            android:layout_below="@id/liniar1"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"
+                android:text="Phone:"
+                android:textColor="@color/black"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/tvProPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginTop="14dp"
+                android:textSize="16sp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text=""
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/liniar3"
+            android:layout_below="@id/liniar2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView343"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Location:"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/tvProAddress"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginTop="14dp"
+                android:textSize="16sp"
+                android:layout_marginStart="5dp"
+                android:text=""
+                android:layout_marginEnd="5dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/changepasswordbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvProfileName"
+            android:layout_below="@id/liniar3"
+            android:text="Change Password"
+            android:layout_marginTop="25dp"
+            tools:ignore="NotSibling,RtlCompat"
+            android:background="@color/LightSeaGreen"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/delaccountbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/changepasswordbtn"
+            android:layout_below="@id/changepasswordbtn"
+            android:text="Delete Account"
+            android:layout_marginTop="10dp"
+            tools:ignore="RtlCompat,UnknownId"
+            android:background="@color/LightSeaGreen"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

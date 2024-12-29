@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/postdamo"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/postnametv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="Username"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/postdatetv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/postnametv"
+        android:layout_below="@+id/postnametv"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="24-Jan-2019"
+        android:textSize="14sp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/poststatustv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/postnametv"
+        android:layout_below="@+id/postdatetv"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Not Collected"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/postimage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/poststatustv"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:maxHeight="300dp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/detailtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/postimage"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Details:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/postdetailstv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/postnametv"
+        android:layout_below="@+id/detailtxt"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="All the details information or comments will be displayed here."
+        android:textSize="16sp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/phonetxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postdetailstv"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Phone Number:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/postphonetv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/postnametv"
+        android:layout_below="@+id/phonetxt"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="01137622208"
+        android:textSize="16sp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/caddresstxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/postnametv"
+        android:layout_below="@+id/postphonetv"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Collection Address:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/postaddresstv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/postnametv"
+        android:layout_below="@+id/caddresstxt"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="The address will be displayed here"
+        android:textSize="16sp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/keytv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignStart="@+id/postnametv"
+        android:layout_below="@+id/postdatetv"
+        android:text=""
+        tools:ignore="RtlCompat" />
+
+
+</RelativeLayout>

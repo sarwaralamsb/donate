@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/history"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:title="Your Donate History"
+        android:iconTint="@color/white"
+        />
+</menu>

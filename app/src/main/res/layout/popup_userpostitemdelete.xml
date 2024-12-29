@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:layout_height="180dp"
+    android:padding="15dp"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textViewdpop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:background="@color/lesswhite"
+        android:text="Are you sure that you want to delete your post?" />
+
+
+
+    <Button
+        android:id="@+id/delpoppostbtn"
+        android:layout_marginTop="25dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@color/LightSeaGreen"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_alignEnd="@+id/textViewdpop"
+        android:layout_below="@id/textViewdpop"
+        android:text="YES"
+        tools:ignore="RtlCompat" />
+    <Button
+        android:id="@+id/delpoppostnobtn"
+        android:layout_marginTop="25dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@color/LightSeaGreen"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewdpop"
+        android:text="No"
+        tools:ignore="RtlCompat" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/reloadpageadmin"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:title="Reload"
+        android:iconTint="@color/white"
+        />
+
+    <item
+        android:id="@+id/exitadmin"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:title="Log Out"
+        android:icon="@drawable/logouticon"
+        android:iconTint="@color/white"
+        />
+
+
+</menu>
